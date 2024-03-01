@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>939</width>
+    <height>704</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Сredential Saver</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>D:/Downloads/login.ico</normaloff>D:/Downloads/login.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #191919;
+font-family: Montserrat;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTableView" name="tableView">
+      <property name="styleSheet">
+       <string notr="true">QTableView {
+background-color: #2C3333;
+margin: 10%;
+border: 2px solid #404258;
+border-bottom-right-radius: 20%;
+border-bottom-left-radius: 20%;
+}
+QTableView::section {
+background-color: #2C3333;
+font-size: 26pt;
+color: #F5E8C7;
+font-weight: 600;
+}
+QTableView::item {
+border: none;
+background-color: #2C3333;
+font-size: 18pt;
+color: #F5E8C7;
+font-weight: 400;
+}
+QTableView::item:selected {
+border: none;
+}</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="btn_add">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+background-color: #404258;
+color: #F5E8C7;
+font-size: 18pt;
+font-weight: 600;
+margin: 20%;
+padding: 15%;
+border-radius: 28%;
+}
+QPushButton:hover {
+background-color: #474E68;
+}
+QPushButton:pressed {
+background-color: #50577A;
+}</string>
+        </property>
+        <property name="text">
+         <string>Add credentials</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res-rc.qrc">
+          <normaloff>:/icons/icons/add.svg</normaloff>:/icons/icons/add.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_edit">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+background-color: #404258;
+color: #F5E8C7;
+font-size: 18pt;
+font-weight: 600;
+margin: 20%;
+padding: 15%;
+border-radius: 28%;
+}
+QPushButton:hover {
+background-color: #474E68;
+}
+QPushButton:pressed {
+background-color: #50577A;
+}</string>
+        </property>
+        <property name="text">
+         <string>Edit credentials</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res-rc.qrc">
+          <normaloff>:/icons/icons/edit.svg</normaloff>:/icons/icons/edit.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_del">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+background-color: #404258;
+color: #F5E8C7;
+font-size: 18pt;
+font-weight: 600;
+margin: 20%;
+padding: 15%;
+border-radius: 28%;
+}
+QPushButton:hover {
+background-color: #474E68;
+}
+QPushButton:pressed {
+background-color: #50577A;
+}</string>
+        </property>
+        <property name="text">
+         <string>Delete credentials</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res-rc.qrc">
+          <normaloff>:/icons/icons/cancel.svg</normaloff>:/icons/icons/cancel.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res-rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
